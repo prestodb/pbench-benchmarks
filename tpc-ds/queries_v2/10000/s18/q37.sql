@@ -7,7 +7,7 @@ select  i_item_id
  where i_current_price between 54 and 54 + 30
  and inv_item_sk = i_item_sk
  and d_date_sk=inv_date_sk
- and d_date between cast('2000-05-04' as date) and (cast('2000-05-04' as date) +  INTERVAL '60' DAY)
+ and d_date between cast('2000-05-04' as date) and (cast('2000-05-04' as date) + INTERVAL '60' DAY)
  and i_manufact_id in (771,927,709,969)
  and inv_quantity_on_hand between 100 and 500
  and cs_item_sk = i_item_sk

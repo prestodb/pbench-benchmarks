@@ -1,0 +1,6 @@
+{
+  "description": "Run the power + 4 streams defined in the TPC-DS spec Appendix D: Query Ordering.",
+  "next": [
+    "streams_v2/1/s0+4streams1.json"
+  ]
+}

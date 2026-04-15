@@ -120,7 +120,7 @@ select  channel, item, return_ratio, return_rank, currency_rank from
  ) store
  where  (
  store.return_rank <= 10
- or 
+ or
  store.currency_rank <= 10
  )
  ) x

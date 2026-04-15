@@ -19,7 +19,7 @@ with customer_total_return as
      ,customer_address
      ,customer
  where ctr1.ctr_total_return > (select avg(ctr_total_return)*1.2
- 			  from customer_total_return ctr2 
+ 			  from customer_total_return ctr2
                   	  where ctr1.ctr_state = ctr2.ctr_state)
        and ca_address_sk = c_current_addr_sk
        and ca_state = 'IN'
