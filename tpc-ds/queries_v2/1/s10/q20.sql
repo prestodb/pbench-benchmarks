@@ -14,7 +14,7 @@ select  i_item_id
  where cs_item_sk = i_item_sk 
    and i_category in ('Children', 'Jewelry', 'Music')
    and cs_sold_date_sk = d_date_sk
- and d_date between cast('1998-01-21' as date) 
+ and d_date between cast('1998-01-21' as date)
  				and (cast('1998-01-21' as date) + INTERVAL '30' DAY)
  group by i_item_id
          ,i_item_desc 

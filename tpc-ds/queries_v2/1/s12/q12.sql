@@ -16,7 +16,7 @@ where
 	ws_item_sk = i_item_sk 
   	and i_category in ('Women', 'Shoes', 'Books')
   	and ws_sold_date_sk = d_date_sk
-	and d_date between cast('2002-02-05' as date) 
+	and d_date between cast('2002-02-05' as date)
 				and (cast('2002-02-05' as date) + INTERVAL '30' DAY)
 group by 
 	i_item_id

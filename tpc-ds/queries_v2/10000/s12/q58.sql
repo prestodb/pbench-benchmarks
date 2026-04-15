@@ -9,7 +9,7 @@ with ss_items as
  where ss_item_sk = i_item_sk
    and d_date in (select d_date
                   from date_dim
-                  where d_week_seq = (select d_week_seq 
+                  where d_week_seq = (select d_week_seq
                                       from date_dim
                                       where d_date = DATE '1999-07-17'))
    and ss_sold_date_sk   = d_date_sk
@@ -23,7 +23,7 @@ with ss_items as
  where cs_item_sk = i_item_sk
   and  d_date in (select d_date
                   from date_dim
-                  where d_week_seq = (select d_week_seq 
+                  where d_week_seq = (select d_week_seq
                                       from date_dim
                                       where d_date = DATE '1999-07-17'))
   and  cs_sold_date_sk = d_date_sk
@@ -37,7 +37,7 @@ with ss_items as
  where ws_item_sk = i_item_sk
   and  d_date in (select d_date
                   from date_dim
-                  where d_week_seq =(select d_week_seq 
+                  where d_week_seq =(select d_week_seq
                                      from date_dim
                                      where d_date = DATE '1999-07-17'))
   and ws_sold_date_sk   = d_date_sk

@@ -5,7 +5,7 @@ with wscs as
         ,sales_price
   from (select ws_sold_date_sk sold_date_sk
               ,ws_ext_sales_price sales_price
-        from web_sales
+        from web_sales 
         union all
         select cs_sold_date_sk sold_date_sk
               ,cs_ext_sales_price sales_price

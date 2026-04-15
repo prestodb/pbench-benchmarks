@@ -14,7 +14,7 @@ select  i_item_id
  where cs_item_sk = i_item_sk 
    and i_category in ('Books', 'Shoes', 'Music')
    and cs_sold_date_sk = d_date_sk
- and d_date between cast('2000-06-15' as date) 
+ and d_date between cast('2000-06-15' as date)
  				and (cast('2000-06-15' as date) + INTERVAL '30' DAY)
  group by i_item_id
          ,i_item_desc 

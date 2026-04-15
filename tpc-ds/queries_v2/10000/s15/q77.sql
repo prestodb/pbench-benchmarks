@@ -8,8 +8,8 @@ with ss as
       date_dim,
       store
  where ss_sold_date_sk = d_date_sk
-       and d_date between cast('2002-08-09' as date) 
-                  and (cast('2002-08-09' as date) +  INTERVAL '30' DAY) 
+       and d_date between cast('2002-08-09' as date)
+                  and (cast('2002-08-09' as date) + INTERVAL '30' DAY)
        and ss_store_sk = s_store_sk
  group by s_store_sk)
  ,
@@ -22,7 +22,7 @@ with ss as
       store
  where sr_returned_date_sk = d_date_sk
        and d_date between cast('2002-08-09' as date)
-                  and (cast('2002-08-09' as date) +  INTERVAL '30' DAY)
+                  and (cast('2002-08-09' as date) + INTERVAL '30' DAY)
        and sr_store_sk = s_store_sk
  group by s_store_sk), 
  cs as
@@ -33,7 +33,7 @@ with ss as
       date_dim
  where cs_sold_date_sk = d_date_sk
        and d_date between cast('2002-08-09' as date)
-                  and (cast('2002-08-09' as date) +  INTERVAL '30' DAY)
+                  and (cast('2002-08-09' as date) + INTERVAL '30' DAY)
  group by cs_call_center_sk 
  ), 
  cr as
@@ -44,7 +44,7 @@ with ss as
       date_dim
  where cr_returned_date_sk = d_date_sk
        and d_date between cast('2002-08-09' as date)
-                  and (cast('2002-08-09' as date) +  INTERVAL '30' DAY)
+                  and (cast('2002-08-09' as date) + INTERVAL '30' DAY)
  group by cr_call_center_sk
  ), 
  ws as
@@ -56,7 +56,7 @@ with ss as
       web_page
  where ws_sold_date_sk = d_date_sk
        and d_date between cast('2002-08-09' as date)
-                  and (cast('2002-08-09' as date) +  INTERVAL '30' DAY)
+                  and (cast('2002-08-09' as date) + INTERVAL '30' DAY)
        and ws_web_page_sk = wp_web_page_sk
  group by wp_web_page_sk), 
  wr as
@@ -68,7 +68,7 @@ with ss as
       web_page
  where wr_returned_date_sk = d_date_sk
        and d_date between cast('2002-08-09' as date)
-                  and (cast('2002-08-09' as date) +  INTERVAL '30' DAY)
+                  and (cast('2002-08-09' as date) + INTERVAL '30' DAY)
        and wr_web_page_sk = wp_web_page_sk
  group by wp_web_page_sk)
   select  channel
