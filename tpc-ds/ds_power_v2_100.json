@@ -1,0 +1,6 @@
+{
+    "description": "Run the first query stream defined in the TPC-DS spec Appendix D: Query Ordering.",
+    "next": [
+        "streams_v2/100/s0.json"
+    ]
+}
