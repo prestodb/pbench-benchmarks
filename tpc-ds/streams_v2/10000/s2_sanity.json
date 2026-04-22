@@ -1,0 +1,8 @@
+{
+  "query_files": [
+    "../../queries_v2/10000/s2/q56.sql",
+    "../../queries_v2/10000/s2/q98.sql",
+    "../../queries_v2/10000/s2/q59.sql"
+  ],
+  "start_on_new_client": true
+}

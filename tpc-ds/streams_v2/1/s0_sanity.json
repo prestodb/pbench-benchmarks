@@ -1,0 +1,11 @@
+{
+    "query_files": [
+        "../../queries_v2/1/s0/q96.sql",
+        "../../queries_v2/1/s0/q07.sql",
+        "../../queries_v2/1/s0/q75.sql"
+    ],
+    "start_on_new_client": true,
+    "next": [
+        "4streams1_sanity.json"
+    ]
+}

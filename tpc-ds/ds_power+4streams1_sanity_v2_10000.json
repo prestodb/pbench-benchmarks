@@ -1,0 +1,6 @@
+{
+    "description": "Sanity test - Run power + 4 streams (first 3 queries from each stream) defined in the TPC-DS spec Appendix D: Query Ordering.",
+    "next": [
+        "streams_v2/10000/s0_then_4streams1_sanity.json"
+    ]
+}
