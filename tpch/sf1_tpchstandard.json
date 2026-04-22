@@ -1,0 +1,5 @@
+{
+  "description": "Specifies the catalog and schema for the standard TPCH scale factor 1. For this scale factor we use the TPCH connector.",
+  "catalog": "tpchstandard",
+  "schema": "sf1"
+}
